@@ -30,5 +30,11 @@ For the hackathon is was decided that a SQL database is the best solution for sh
 Amazing Prime loves the dataset and wants to keep it updated on a daily basis. They need to create an automated pipeline that takes in new data, performs the appropriate transformations, and loads the data into existing tables.
 
 ## Challenge Summary
-The final code from the [module](https://github.com/hillarykrumbholz/Movies_ETL/blob/master/Movies_ETL.ipynb) was used to write a Python script that performs all three ETL steps on the Wikipedia and Kaggle data. It is preferred to leave out any code that performs exploratory data analysis. 
+The final code from the [module](https://github.com/hillarykrumbholz/Movies_ETL/blob/master/Movies_ETL.ipynb) was used to write a Python script that performs all three ETL steps on the Wikipedia and Kaggle data. It is preferred to leave out any code that performs exploratory data analysis.
 
+There were assumptions made in order to successfuly clean the data. They are as follows:
+1. The data sources only came from two sources and do not change. If there was a change or if an additional file is needed for data, then the read and load scripts would need to be altered. 
+2. When looking at and comparing data from Wikipedia and Kaggle, it appeared that the data between the two did not always match. In a few cases such as title, Kaggle had a more consistent structure. So we confirmed there were not any missing values in the Kaggle data, and dropped Wikipedia data. In other cases such as budget, we kept Kaggle data, but filled in any zeros it had with data from Wikipedia. 
+3. Column names between Kaggle and Wikipedia differed, so a large part of the data cleaning process was to delete columns, without deleting needed data. Try-Else statements were used to make sure the code continued to run in the case errors occured. 
+4. We assumed that when merging the two data sources the common column name, imdb_id would not change. If this were to change then our left-join would not work. 
+5. The local database in PostgreSQL would not change, meaning that the owner and server of this new large dataset would continue to be handled by one individual, which is unlikey in a company like Amazing Prime. 
