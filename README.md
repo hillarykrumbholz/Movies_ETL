@@ -30,5 +30,5 @@ For the hackathon is was decided that a SQL database is the best solution for sh
 Amazing Prime loves the dataset and wants to keep it updated on a daily basis. They need to create an automated pipeline that takes in new data, performs the appropriate transformations, and loads the data into existing tables.
 
 ## Challenge Summary
-The final code from the module [module_code](https://github.com/hillarykrumbholz/Movies_ETL/blob/master/Movies_ETL.ipynb) was used to write a Python script that performs all three ETL steps on the Wikipedia and Kaggle data. It is preferred to leave out any code that performs exploratory data analysis. 
+The final code from the [module](https://github.com/hillarykrumbholz/Movies_ETL/blob/master/Movies_ETL.ipynb) was used to write a Python script that performs all three ETL steps on the Wikipedia and Kaggle data. It is preferred to leave out any code that performs exploratory data analysis. 
 
