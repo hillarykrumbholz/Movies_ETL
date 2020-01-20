@@ -32,7 +32,7 @@ Amazing Prime loves the dataset and wants to keep it updated on a daily basis. T
 ## Challenge Summary
 The final code from the [module](https://github.com/hillarykrumbholz/Movies_ETL/blob/master/Movies_ETL.ipynb) was used to write a Python script that performs all three ETL steps on the Wikipedia and Kaggle data. It is preferred to leave out any code that performs exploratory data analysis.
 
-The final, cleaned code can be seen in either [Challenge python](https://github.com/hillarykrumbholz/Movies_ETL/blob/master/Challenge_ETL.py) file, or in the [Challenge JupyterNB](https://github.com/hillarykrumbholz/Movies_ETL/blob/master/Challenge_ETL.ipynb) file. 
+The final, cleaned code can be seen in either [Challenge python](https://github.com/hillarykrumbholz/Movies_ETL/blob/master/Challenge_ETL.py) file, or in the [Challenge JupyterNB](https://github.com/hillarykrumbholz/Movies_ETL/blob/master/Challenge.ipynb) file. 
 
 There were assumptions made in order to successfuly clean the data. They are as follows:
 1. The data sources only came from two sources and do not change. If there was a change or if an additional file is needed for data, then the read and load scripts would need to be altered. 
